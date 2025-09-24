@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>TasteCrafters Menu</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#ec6d13",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20 border-b border-primary/20 dark:border-primary/30">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.8261 30.5736C16.7203 29.8826 20.2244 29.4783 24 29.4783C27.7756 29.4783 31.2797 29.8826 34.1739 30.5736C36.9144 31.2278 39.9967 32.7669 41.3563 33.8352L24.8486 7.36089C24.4571 6.73303 23.5429 6.73303 23.1514 7.36089L6.64374 33.8352C8.00331 32.7669 11.0856 31.2278 13.8261 30.5736Z" fill="currentColor"></path>
+<path clip-rule="evenodd" d="M39.998 35.764C39.9944 35.7463 39.9875 35.7155 39.9748 35.6706C39.9436 35.5601 39.8949 35.4259 39.8346 35.2825C39.8168 35.2403 39.7989 35.1993 39.7813 35.1602C38.5103 34.2887 35.9788 33.0607 33.7095 32.5189C30.9875 31.8691 27.6413 31.4783 24 31.4783C20.3587 31.4783 17.0125 31.8691 14.2905 32.5189C12.0012 33.0654 9.44505 34.3104 8.18538 35.1832C8.17384 35.2075 8.16216 35.233 8.15052 35.2592C8.09919 35.3751 8.05721 35.4886 8.02977 35.589C8.00356 35.6848 8.00039 35.7333 8.00004 35.7388C8.00004 35.739 8 35.7393 8.00004 35.7388C8.00004 35.7641 8.0104 36.0767 8.68485 36.6314C9.34546 37.1746 10.4222 37.7531 11.9291 38.2772C14.9242 39.319 19.1919 40 24 40C28.8081 40 33.0758 39.319 36.0709 38.2772C37.5778 37.7531 38.6545 37.1746 39.3151 36.6314C39.9006 36.1499 39.9857 35.8511 39.998 35.764ZM4.95178 32.7688L21.4543 6.30267C22.6288 4.4191 25.3712 4.41909 26.5457 6.30267L43.0534 32.777C43.0709 32.8052 43.0878 32.8338 43.104 32.8629L41.3563 33.8352C43.104 32.8629 43.1038 32.8626 43.104 32.8629L43.1051 32.865L43.1065 32.8675L43.1101 32.8739L43.1199 32.8918C43.1276 32.906 43.1377 32.9246 43.1497 32.9473C43.1738 32.9925 43.2062 33.0545 43.244 33.1299C43.319 33.2792 43.4196 33.489 43.5217 33.7317C43.6901 34.1321 44 34.9311 44 35.7391C44 37.4427 43.003 38.7775 41.8558 39.7209C40.6947 40.6757 39.1354 41.4464 37.385 42.0552C33.8654 43.2794 29.133 44 24 44C18.867 44 14.1346 43.2794 10.615 42.0552C8.86463 41.4464 7.30529 40.6757 6.14419 39.7209C4.99695 38.7775 3.99999 37.4427 3.99999 35.7391C3.99999 34.8725 4.29264 34.0922 4.49321 33.6393C4.60375 33.3898 4.71348 33.1804 4.79687 33.0311C4.83898 32.9556 4.87547 32.8935 4.9035 32.8471C4.91754 32.8238 4.92954 32.8043 4.93916 32.7889L4.94662 32.777L4.95178 32.7688ZM35.9868 29.004L24 9.77997L12.0131 29.004C12.4661 28.8609 12.9179 28.7342 13.3617 28.6282C16.4281 27.8961 20.0901 27.4783 24 27.4783C27.9099 27.4783 31.5719 27.8961 34.6383 28.6282C35.082 28.7342 35.5339 28.8609 35.9868 29.004Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-2xl font-bold text-stone-900 dark:text-stone-100">TasteCrafters</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-primary dark:text-primary" href="#">Menu</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">About</a>
+<a class="text-sm font-medium hover:text-primary dark:hover:text-primary transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined text-stone-900 dark:text-stone-100">search</span>
+</button>
+<button class="flex items-center justify-center h-10 w-10 rounded-full hover:bg-primary/20 dark:hover:bg-primary/30 transition-colors">
+<span class="material-symbols-outlined text-stone-900 dark:text-stone-100">shopping_cart</span>
+</button>
+<button class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDF12KOvuvL7DBHYaZ5rAl8mD0trrVV-OR0L3rNUq1WZ-DlGRVOD8gI1y5YO2PlUPkpRBBnBhX_bBrJ6Kvf_4Q4UO_ZMAkFl7pCLQJ0_E-1seBH7UiUS9QyMLjxFlTWs7k6WgMDW5jtB8q4BuaMWEoHLO9hoaIaGb3JU398n56CxrdWUBuFyCscw9At0fQAJLftw581mlmd0gpFCtqkGtJ22rQa9Yjj07WnRA3KyC_BKF_qygsAcMps_w6uWADRpnEjC72QrL0NKpo");'></button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-4xl font-bold text-stone-900 dark:text-stone-100 mb-12">Menu</h2>
+<div class="space-y-12">
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Appetizers</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBzsWNrUd3sbqkTPNzhMZQ3kUdv6KIAXRX2WzncF8XmyYLaEr_n1z0wfFcoS69vC3kkmHkeI-xuJG8teEuxiLO_ygrlh3l4M6FEtr4uYX7wHxx66HQ13BbOR5pmQur9rMnUbrzFBX0Wa_pus3yS25G4nWrlncgqIr5jOirjr6RNly5tJnGf1fwaiPUmUNwveUHVQrfFtivJHs7U1CE55oKxxNNOWXorVjI1OAVbsfawJsbDRfCsXppy8e-qzkXpYOGHwhKD8D17Cg4");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Tomato Bruschetta</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCy7dcLPHZJpVD5f3eLVy8tfvS7pMyp7Q1xz_2-0SW8sTrzErVsdh86iE54dZ6MFn8ZK_u3N-Lk-3Wqxvfwg3CrouOo-Rz4DZp6i5eXWwFA8BRgpmCy1wHZrwKoUQmE3UjCOo68Vyn3wkJi2zIktYsDZiZqtbdpnXXVqh6tRcpKaiPPMwaTGyoEZGldWU0NnXDuQV3uDpmWlspw28GaevUEbMyd38lESPYwZPaH8zDEEfO61t6OYWSOxqO581YIOZhSv9mPReYVuGM");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Crispy Spring Rolls</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDg48IdpKxNVQAgbCjBrGC66A42HQRR5EPJIzN9-btKxDOqEyLvhz3JPN8bJjxFCbakqAEDNPMIWcY6x72FJ5zErZGEEkfdinNOwKbMQyowNbzO58uZvkN3X5I11BihvWxJUuyRKU1DT7wvIB1ifJPjw8IbSKAj1LpGXsBjV-kPS18xqyoKHM_DicmP8OvXIVBXR2SeroYl3htD1nqTWDFeO0VDlD2cwxC5oAm3tfy4mjLFYECGDMZOywhglrNv-qbfnmmPPpqeT7Q");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Fried Calamari</span>
+</button>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Main Courses</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCVi-5Q_NyE5OTlGvxy2KLIh14r3yptVL9x4DQ7qcmklvfu9FyznnpKgPevO-Kd8S5SWcFH-0R8r1fxEy9BSwnKur8eE2UpvsLHyxJQHn6TMDkmX2mXtRvxLT_ewmZdGQVv4sfyYma5RVmJwkH1A2ikPuTR8OdaqsysVUAASpMPWqzeJRmeVhfTpbIzlBLIHnwvh9AMTEuQnm6D-s6wMuULIBlc_a_OKDvYi-98lS0e6_YaqQJv59YEPvAOMo42k68SClnUtyMplM");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Grilled Ribeye Steak</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfah5a_KBEd12kF-GvyJSsjtujUoFg6eitV31KvD39yHBXpKp2CQ8NBX1_fehh-PQOgTYCw3nIBFcCXKIKUYYP6O4F60J7c47sKW7nyFu-pxCtRSnh2jH5mBzKFu-jvdr7OKCueI8s6VcxFsFkH3ywY8kxTxJNe-9GPUcR49t8OdlFFwShSP81scZ0ZaNhP5T6Nwj1G9t-T8EqKwJ8flit49cJOXe8DjzeNw8TbTxmzs1a88VOm4vKTVwZ0hhIalZJAKWCbODP0Z8");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Creamy Pesto Pasta</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBFlJHcKtfXnPT_2bmJffoMxJmBWqJuic_XwTCGh8fQqql3zc-O3_Rc-t_IwS1HfNn9yTG0EkupZdXBf_ApNeREaU4V7vBNHBI_E40NWGeFDM6xs-EkI6Dl054ggBOP4QSVJzhF_bv6WcGosUU2ziKSb6lXp-wUdj_KMnHQbizyNnZ_D6z8xMu3OwmesOMAXdErpE_EZbRv5EdyUcM8nbUopachrGdE41AbIwMLbyCtO4GNLL52gbMEW64xCKJP7Ar0fkNqweJ5ZqQ");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Pan-Seared Salmon</span>
+</button>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Desserts</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDC0f_xiZdOVl3RDSgZWAWY1PHGLlA_0PnAQQF_bBKIXSjtyyF7OTryyRuJ3YOIu0d1hw5Eb2Mt35LOHzf15R4tu_8_QniMMF4gJO5mVjjzJ-8S_TOayjEW59DXprxTiQJOmy45GhYF8U0nCJWtryWGPM114C08alecPeSNrVDAx48FlK-aDSIKnHkyYi6vEEVDWtVn7WqUuoCCL97LZVpSS3E-OGEr7NDfiGtTW_T_2iDqW1mSiuz72GRW3-BQ8Y5lkbF116Ygonk");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Decadent Chocolate Cake</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD9_1GqcCsqqmE0ChP7Q68AKNE--n7O29hTLLN_mpjKVmXkP-HcdzZsaKOtXA4oiebawrUgOCqmwU7LBBxJSdeBsMTBSBV4ActsRPX-f8BJAD6AblE6lRWLUObNGp4Wc2f2Vy-y5raBztlUSmYkcxnn12g3GsO2WJZVZrvv3mwnNRLpsXqH3mv20df-MJoUMdww-BzFrvkD8BnIaa5PcGwT4W1vn5By-KIEI2F9nQA5L_vcDDvISh7krNuJm60vQovQuSXgKlSKKpo");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Classic New York Cheesecake</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB12KLccGfQgad69dpiCW8l8XpL6D8DGxFGoOi_s_nJ-bKnycFpJjMTWlLjpNobpEUQe9HFJyN5GG30lA4AVbnEE_9f-SBIeiJdeVP6QML9zvWQEx-NJsyHbuQWZBkuof3gIhKIoDTJ5dHJ_AuMB6Xn1IUPy8eejnp2-FqFU0qYv7h5OWRzYZDm9MDReK2sMe9vOa9H9Pb8BgId-Mj5C8iJO6Jun_5RWgkjsA0A4xvAU34zXF5bhWu-h_GVoIzLNcLbfL0FJ3C9JCo");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Assorted Ice Cream</span>
+</button>
+</div>
+</div>
+<div>
+<h3 class="text-2xl font-bold text-primary mb-6">Beverages</h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDVen9KvEC8M-GvVUKlNE7f6fJMdq23k1LVZA8AUTXHCzDMnA7D_jubZQeRiY9HR__o_wnQbVv_uu5u9pdi1fK-e0_9e7WI9gWGK35IiD4WaS9MO-nKiuAkt6ZtFks4nFMTeY2zFvBgOs42BVCbxVtzOjqOT-2YhjeskMJ2tQI4q_b8pDVbpEau9ORD9LL4GOV7M-a_prdiBCp1dstLwSxPDYagYY-CrFF5w_zHXWqWcjbV47xUt0Q9t10KYXUCVhU4-aQUjttexuc");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Cabernet Sauvignon</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAwkb41KqpQo3oMrm-qL_hGf74-71b8EWHQ9Z5vxQvP0U68XwmFBAt14u-m3bXinoxlrfFLugTTJ6KYFQr-9BlwDtE2LgMOdLgKX56Wzt-vl4l-wuyFARRTUUZg2kksQcsoDQYIlZ0DZ0IMExJqhvLI0a5LIpz_ZMHdeUWiFW2xDZX4XXgn945Zof7gIALnAfjcioLGusHxd8yldcwM9nalZYNOAYM53wchb4d_hwBY6BUZXyn2ZJNICl7NNGrAXXiIbz3TPtRCreE");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Chardonnay</span>
+</button>
+<button class="group flex items-center gap-4 p-4 rounded-lg bg-background-light dark:bg-background-dark border border-primary/20 hover:border-primary dark:border-primary/30 dark:hover:border-primary transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-lg dark:shadow-none">
+<div class="w-16 h-16 rounded-lg bg-cover bg-center shrink-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAPVHpM1smc9kH4A9dInYbwwYD5kdVpyOlDpr-t4tYwpUPp1jRFr-Yvql82RWqcc3NpGDlrz5fJcjDRTLuwsEhmXquks-K1HMfM8onolFxy1lxuDNxAl3fT1XisP1QrdFMXCe5FlwNJ49WckR0FRZHXEtlJNSc2Q-4h7J_2D-jIslygUW3-ORS6uYc5LjrvAY-TpiEDPaMGd57xggNiZHOCbAdY_E5MiZQnSVUTBKFj_oOrmFiBqTqLAaI5BND4GwFCCnVISAQ77Lk");'></div>
+<span class="text-left font-semibold text-stone-900 dark:text-stone-100">Craft Beer Selection</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
